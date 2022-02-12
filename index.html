@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kinu Fitness</title>
+    </head>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* CSS Reset */
+        body{
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background-image: url('img/img1.jpg');
+            background-repeat: no-repeat;
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;   
+        }
+        .left div{
+            text-align: center;
+            font-size: 25px;
+            line-height: 20px;
+        }
+        .left img{
+            width: 99px;
+            filter: invert(100%);
+            margin-left: 20px;
+        }
+        .mid{
+            display: block;
+            width: 50%;
+            margin: 32px auto;
+            /* border: 2px solid green; */
+        }
+        .right{
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px
+        }
+        .right button i{
+            padding-right: 5px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover,.navbar li a.active{
+           text-decoration: underline;
+           color: gray;
+        }
+        .btn{
+            margin: 20px 9px;
+            color: white;
+            background-color:black;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 14px;
+            font-size: 20px;
+            font-family: 'Baloo Bhai', cursive;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(34, 33, 33);
+        }
+        .container{
+            border: 2px solid white;
+            margin: 100px 80px;
+            padding: 75px;
+            width: 36%;
+            border-radius: 28px;
+        }
+        .formGroup input{
+            font-family:'Baloo Bhai', cursive;;
+            text-align: center;
+            display: block;
+            font-size: 25px;
+            margin: 11px auto;
+            width: 500px;
+            border: 2px solid gray;
+            padding: 3px;
+            border-radius: 10px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 500px;
+            margin: 20px auto;
+        }
+        .container button i{
+            padding: 3px 3px 0px 5px;
+            size: 4px;
+        }
+        .chat{
+            background-color: rgb(182, 42, 135);
+            width: 70px;
+            height: 70px;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            border-radius: 50px;
+        }
+        .chat i{
+            padding: 20px 20px;
+            cursor: pointer;
+        }
+        .chat i:hover{
+            background-color: rgb(192, 39, 141);
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            border-radius: 50px;
+        }
+</style>
+    <body>
+        <header class="header">
+            <!-- left box for logo -->
+            <div class="left">
+                <img src="img/logo.jpg" alt="">
+                <div>
+                    Kinu Fitness
+                </div>
+            </div>
+            <!-- mid box for navigation -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Fitness Plan</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul> </div>
+            <!-- right box for buttons -->
+            <div class="right">
+                <button class="btn">
+                    <i class="fa fa-phone"></i>Call us
+                </button>
+                <button class="btn">
+                    <i class="fa fa-envelope"></i>Email us
+                </button>
+            </div>
+        </header>
+        <div class="container">
+            <h1>Join the best Gym of Ahmedabad</h1>
+            <form action="noaction.php">
+                <div class="formGroup">
+                    <input type="text" name="" placeholder="Enter Your Name:">
+                </div>
+                <div class="formGroup">
+                    <input type="number" name="" placeholder="Enter Your Age:">
+                </div>
+                <div class="formGroup">
+                    <input type="text" name="" placeholder="Enter Your Gender:">
+                </div>
+                <div class="formGroup">
+                    <input type="text" placeholder="Enter Your Locality:">
+                </div>
+                <div class="formGroup">
+                    <input type="tel" placeholder="Enter Your Mobile number:">
+                </div>
+                <div class="formGroup">
+                    <input type="email" placeholder="Enter Your Email-Id:">
+                </div>
+                <button class="btn">Submit<i class="fa fa-paper-plane"></i></button>
+            </form>
+
+        </div>
+        <div class="chat">
+            <i class="fa fa-comment fa-2x"></i>
+        </div>
+
+    </body>
+</html>
